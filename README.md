@@ -57,7 +57,7 @@ I focus on simplicity, performance, and building solutions that really work.
 
 ###
 
-<h3 align="left">🛠️ DevOps & Tools</h3>
+<h3 align="left">🛠️ Tools</h3>
 
 
 <a href="#"><img src="https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=FFFFFF" alt="GitHub" width="45" height="45"/></a>
