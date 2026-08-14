@@ -29,51 +29,56 @@ I focus on simplicity, performance, and building solutions that really work.
 
 <h3 align="left">🖥️ Back-End Frameworks</h3>
 
-<a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="csharp" width="45" height="45"/></a>
-<a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original.svg" alt="dot-net" width="45" height="45"/></a>
-<a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" alt="dotnetcore" width="45" height="45"/></a>
-<a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blazor/blazor-original.svg" alt="blazor" width="45" height="45"/></a>
+<a href="#"><img src="https://img.shields.io/badge/C%23-239120?style=flat&logo=csharp&logoColor=white" alt="csharp" height="45"/></a>
+<a href="#"><img src="https://img.shields.io/badge/.NET-512BD4?style=flat&logo=dotnet&logoColor=white" alt="dot-net" height="45"/></a>
+<a href="#"><img src="https://img.shields.io/badge/ASP.NET_Core-512BD4?style=flat&logo=dotnet&logoColor=white" alt="dotnetcore" height="45"/></a>
+<a href="#"><img src="https://img.shields.io/badge/Blazor-512BD4?style=flat&logo=blazor&logoColor=white" alt="blazor" height="45"/></a>
 
 
 ###
 
 <h3 align="left">🎨 Front-End</h3>
 
-<a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="bootstrap" width="45" height="45"/></a>
-<a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="html5" width="45" height="45"/></a>
-<a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="css3" width="45" height="45"/></a>
-<a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="javascript" width="45" height="45"/></a>
-
+<a href="#"><img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white" alt="bootstrap" height="45"/></a>
+<a href="#"><img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" alt="html5" height="45"/></a>
+<a href="#"><img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white" alt="css3" height="45"/></a>
+<a href="#"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" alt="javascript" height="45"/></a>
 
 
 ###
 
 <h3 align="left">🗄️ Databases</h3>
-<a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" alt="microsoftsqlserver" width="45" height="45"/></a>
-<a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain-wordmark.svg" alt="postgresql" width="45" height="45"/></a>
-<a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" alt="redis" width="45" height="45"/></a>
-<a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-plain-wordmark.svg" alt="mysql" width="45" height="45"/></a>
+
+<a href="#"><img src="https://img.shields.io/badge/SQL_Server-CC2927?style=flat&logo=microsoftsqlserver&logoColor=white" alt="microsoftsqlserver" height="45"/></a>
+<a href="#"><img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white" alt="postgresql" height="45"/></a>
+<a href="#"><img src="https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white" alt="redis" height="45"/></a>
+
+
+###
+
+<h3 align="left">🤖 Machine Learning</h3>
+
+<a href="#"><img src="https://img.shields.io/badge/ML.NET-512BD4?style=flat&logo=dotnet&logoColor=white" alt="ml.net" height="45"/></a>
 
 
 ###
 
 <h3 align="left">🛠️ Tools</h3>
 
-
-<a href="#"><img src="https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=FFFFFF" alt="GitHub" width="45" height="45"/></a>
-<a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rider/rider-original.svg" alt="rider" width="45" height="45" /></a>
-<a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg" alt="visualstudio" width="45" height="45" /></a>
-<a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="vscode" width="45" height="45" /></a>
-<a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/insomnia/insomnia-original.svg" alt="insomnia" width="45" height="45" /></a>
+<a href="#"><img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white" alt="GitHub" height="45"/></a>
+<a href="#"><img src="https://img.shields.io/badge/Rider-000000?style=flat&logo=rider&logoColor=white" alt="rider" height="45" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Visual_Studio-5C2D91?style=flat&logo=visualstudio&logoColor=white" alt="visualstudio" height="45" /></a>
+<a href="#"><img src="https://img.shields.io/badge/VS_Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white" alt="vscode" height="45" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Insomnia-4000BF?style=flat&logo=insomnia&logoColor=white" alt="insomnia" height="45" /></a>
 
 
 ###
 
 <h3 align="left">✨Some Experience</h3>
-<a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="python" width="45" height="45" /></a>
-<a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="php" width="45" height="45" /></a>
-<a href="#"><img src="https://img.icons8.com/?size=100&id=MHcMYTljfKOr&format=png&color=FFFFFF" alt="flask" width="45" height="45" /></a>
 
+<a href="#"><img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" alt="python" height="45" /></a>
+<a href="#"><img src="https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white" alt="fastapi" height="45" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white" alt="flask" height="45" /></a>
 ###
 <h3 align="left">📦 My Projects</h3>
 
@@ -93,16 +98,6 @@ I focus on simplicity, performance, and building solutions that really work.
   </tbody>
 </table>
 
-
-###
-
-<h3 align="left">🔥   My Stats :</h3>
-
-###
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=amirebadifar87&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=1&theme=dark&hide_border=false&order=2" height="150" alt="languages graph"  />
-</div>
 
 ###
 
