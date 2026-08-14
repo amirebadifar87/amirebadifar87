@@ -81,7 +81,6 @@ I focus on simplicity, performance, and building solutions that really work.
 <a href="#"><img src="https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white" alt="flask" height="45" /></a>
 ###
 <h3 align="left">📦 My Projects</h3>
-
 <table>
   <thead>
     <tr>
@@ -94,12 +93,12 @@ I focus on simplicity, performance, and building solutions that really work.
       <td>🤝 <a href="https://meetyab.ir" target="_blank"><strong>Meetyab.ir</strong></a></td>
       <td>A live scheduling platform designed to help teams efficiently find the best meeting times. <i>(Co-developed with <strong><a href="https://github.com/alireza-haeri/">@alireza-haeri</a></strong>)</i></td>
     </tr>
-
+    <tr>
+      <td>🌉 <a href="https://github.com/amirebadifar87/PromptBridge" target="_blank"><strong>PromptBridge</strong></a></td>
+      <td>A local desktop tool that connects your codebase to any AI chat assistant — without an API key.</td>
+    </tr>
   </tbody>
 </table>
-
-
-###
 
 <div align="right">
 <img src="https://visitor-badge.laobi.icu/badge?page_id=amirebadifar87.amirebadifar87&"  />
