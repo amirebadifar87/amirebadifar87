@@ -212,23 +212,24 @@
             "support"
           ],
           [
-            "Additional Experience",
-            "تجربه‌های تکمیلی",
+            "Basic Familiarity",
+            "آشنایی مقدماتی و تمرین محدود",
             [
               "NestJS",
               "Python",
               "FastAPI",
               "Flask"
             ],
-            "support"
+            "familiarity"
           ]
         ],
-        "learningNote": "در حال یادگیری: Go — در کنار مسیر اصلی تخصصی .NET."
+        "learningNote": "در حال یادگیری: Go — در کنار مسیر اصلی تخصصی .NET.",
+        "familiarityNote": "تجربه‌ام در این موارد کم است؛ در حد آشنایی و ساخت CRUD ساده، نه تسلط حرفه‌ای."
       },
       "projects": {
         "eyebrow": "پروژه‌های منتخب",
         "heading": "شواهد واقعی، مهم‌تر از فهرست مهارت‌ها.",
-        "intro": "چهار پروژه با نقش‌های متفاوت: محصول عملیاتی، همکاری تیمی و ابزارهای مستقل برای توسعه‌دهندگان.",
+        "intro": "سه پروژه منتخب با نقش‌های متفاوت؛ محصول عملیاتی مهریز در بخش بعد آمده است.",
         "featured": "پروژه شاخص",
         "caseStudy": "مطالعه موردی",
         "live": "مشاهده نسخه آنلاین",
@@ -531,23 +532,24 @@
             "support"
           ],
           [
-            "Additional Experience",
-            "Complementary experience",
+            "Basic Familiarity",
+            "Introductory familiarity and limited practice",
             [
               "NestJS",
               "Python",
               "FastAPI",
               "Flask"
             ],
-            "support"
+            "familiarity"
           ]
         ],
-        "learningNote": "Currently learning: Go—alongside, not instead of, my main .NET path."
+        "learningNote": "Currently learning: Go—alongside, not instead of, my main .NET path.",
+        "familiarityNote": "Limited experience with these technologies: basic familiarity and simple CRUD implementation, not professional mastery."
       },
       "projects": {
         "eyebrow": "Selected projects",
         "heading": "Real evidence matters more than a list of skills.",
-        "intro": "Four projects with different roles: a production system, team collaboration and independent tools for developers.",
+        "intro": "Three selected projects with different roles; the production Mehriz website follows in its own section.",
         "featured": "Featured project",
         "caseStudy": "Case study",
         "live": "View live website",

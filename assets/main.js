@@ -38,6 +38,7 @@
     const isDark = theme === 'dark';
     root.dataset.theme = isDark ? 'dark' : 'light';
     themeButton.setAttribute('aria-pressed', String(isDark));
+    themeButton.setAttribute('aria-label', isDark ? 'تغییر به حالت روشن' : 'تغییر به حالت تاریک');
     themeButton.title = isDark ? 'تغییر به حالت روشن' : 'تغییر به حالت تاریک';
     themeColor.content = isDark ? '#101c22' : '#f7f9f8';
     if (persist) {
@@ -177,12 +178,12 @@
     toastTimer = setTimeout(() => toast.classList.remove('is-visible'), 5000);
   }
 
-  function legacyCopy(text) {
+  function legacyCopy(text, label = 'پیوند سایت برای کپی') {
     const previouslyFocused = document.activeElement;
     const field = document.createElement('textarea');
     field.value = text;
     field.readOnly = true;
-    field.setAttribute('aria-label', 'پیوند سایت برای کپی');
+    field.setAttribute('aria-label', label);
     field.style.cssText = 'position:fixed;top:0;left:-9999px;opacity:0;font-size:16px;';
     document.body.appendChild(field);
     field.select();
@@ -300,7 +301,7 @@
       try {
         if (navigator.clipboard && window.isSecureContext) { await navigator.clipboard.writeText(text); copied = true; }
       } catch (_) {}
-      if (!copied) copied = legacyCopy(text);
+      if (!copied) copied = legacyCopy(text, 'متن درخواست برای کپی');
       showToast(copied ? messages.copied : messages.copyFailed);
       if (copied) status.textContent = messages.copied;
     });
