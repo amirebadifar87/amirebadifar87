@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url><loc>https://amirebadifar.ir/</loc><xhtml:link rel="alternate" hreflang="fa" href="https://amirebadifar.ir/"/><xhtml:link rel="alternate" hreflang="en" href="https://amirebadifar.ir/en/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://amirebadifar.ir/"/></url>
-  <url><loc>https://amirebadifar.ir/projects/mehriz/</loc><xhtml:link rel="alternate" hreflang="fa" href="https://amirebadifar.ir/projects/mehriz/"/><xhtml:link rel="alternate" hreflang="en" href="https://amirebadifar.ir/en/projects/mehriz/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://amirebadifar.ir/projects/mehriz/"/></url>
-  <url><loc>https://amirebadifar.ir/projects/meetyab/</loc><xhtml:link rel="alternate" hreflang="fa" href="https://amirebadifar.ir/projects/meetyab/"/><xhtml:link rel="alternate" hreflang="en" href="https://amirebadifar.ir/en/projects/meetyab/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://amirebadifar.ir/projects/meetyab/"/></url>
-  <url><loc>https://amirebadifar.ir/projects/promptbridge/</loc><xhtml:link rel="alternate" hreflang="fa" href="https://amirebadifar.ir/projects/promptbridge/"/><xhtml:link rel="alternate" hreflang="en" href="https://amirebadifar.ir/en/projects/promptbridge/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://amirebadifar.ir/projects/promptbridge/"/></url>
-  <url><loc>https://amirebadifar.ir/projects/ollaya-client/</loc><xhtml:link rel="alternate" hreflang="fa" href="https://amirebadifar.ir/projects/ollaya-client/"/><xhtml:link rel="alternate" hreflang="en" href="https://amirebadifar.ir/en/projects/ollaya-client/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://amirebadifar.ir/projects/ollaya-client/"/></url>
-  <url><loc>https://amirebadifar.ir/en/</loc><xhtml:link rel="alternate" hreflang="fa" href="https://amirebadifar.ir/"/><xhtml:link rel="alternate" hreflang="en" href="https://amirebadifar.ir/en/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://amirebadifar.ir/"/></url>
-  <url><loc>https://amirebadifar.ir/en/projects/mehriz/</loc><xhtml:link rel="alternate" hreflang="fa" href="https://amirebadifar.ir/projects/mehriz/"/><xhtml:link rel="alternate" hreflang="en" href="https://amirebadifar.ir/en/projects/mehriz/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://amirebadifar.ir/projects/mehriz/"/></url>
-  <url><loc>https://amirebadifar.ir/en/projects/meetyab/</loc><xhtml:link rel="alternate" hreflang="fa" href="https://amirebadifar.ir/projects/meetyab/"/><xhtml:link rel="alternate" hreflang="en" href="https://amirebadifar.ir/en/projects/meetyab/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://amirebadifar.ir/projects/meetyab/"/></url>
-  <url><loc>https://amirebadifar.ir/en/projects/promptbridge/</loc><xhtml:link rel="alternate" hreflang="fa" href="https://amirebadifar.ir/projects/promptbridge/"/><xhtml:link rel="alternate" hreflang="en" href="https://amirebadifar.ir/en/projects/promptbridge/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://amirebadifar.ir/projects/promptbridge/"/></url>
-  <url><loc>https://amirebadifar.ir/en/projects/ollaya-client/</loc><xhtml:link rel="alternate" hreflang="fa" href="https://amirebadifar.ir/projects/ollaya-client/"/><xhtml:link rel="alternate" hreflang="en" href="https://amirebadifar.ir/en/projects/ollaya-client/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://amirebadifar.ir/projects/ollaya-client/"/></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://amirebadifar.ir/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
 </urlset>
