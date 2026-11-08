@@ -293,7 +293,7 @@ h2 { margin-bottom: 0; font-size: 36px; font-weight: 800; line-height: 1.65; let
 .filter-button.is-active { background: var(--surface); color: var(--accent); box-shadow: 0 2px 5px rgba(25, 55, 38, .06); font-weight: 600; }
 .filter-button > span { padding: 0 5px; border-radius: 3px; background: var(--soft); font-size: 9px; line-height: 1.8; }
 .project-count { margin: 0; color: var(--muted); font-size: 10px; }
-.projects-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px; }
+.projects-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; }
 .project-card { min-width: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); transition: box-shadow .3s, transform .3s, border-color .3s; }
 .project-card:hover { border-color: #b7cdbf; box-shadow: 0 14px 36px rgba(24, 61, 39, .07); transform: translateY(-4px); }
 .project-art { position: relative; display: flex; align-items: center; justify-content: center; height: 290px; overflow: hidden; }
@@ -392,6 +392,52 @@ h2 { margin-bottom: 0; font-size: 36px; font-weight: 800; line-height: 1.65; let
 .projects-footnote a { color: var(--accent); text-decoration: underline; text-underline-offset: 4px; text-decoration-color: var(--line); }
 .projects-footnote a:hover { text-decoration-color: currentColor; }
 
+/* Live production work, project status, and additional concept art */
+.blue-dot { background: #5579a5; }
+.online-dot { background: #2f7d54; }
+.project-status { position: absolute; top: 16px; right: 16px; z-index: 2; display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px; border-radius: 20px; font-size: 9px; font-weight: 600; line-height: 1.6; }
+.project-status::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+.project-status.is-online { background: #1f6b4a; color: #fff; }
+.project-status.is-offline { background: #5c6660; color: #fff; }
+.project-cta.is-disabled { color: var(--muted); cursor: default; }
+.project-cta.is-disabled:hover .icon { transform: none; }
+.cta-domain { font-family: "Space Grotesk", sans-serif; font-size: 10px; font-weight: 400; color: var(--muted); }
+.production-section { padding-top: 0; }
+.production-card { display: grid; grid-template-columns: 1.05fr 1fr; }
+.production-card .project-art { height: 100%; min-height: 340px; }
+.production-card .project-info { align-self: center; padding: 34px 36px; }
+.production-card .project-info > p { min-height: 0; }
+
+.ollaya-art { background: radial-gradient(ellipse at 25% 80%, #dde6f4, transparent 72%), #edf1f8; }
+.ollaya-scene { display: flex; flex-direction: column; gap: 11px; width: 86%; max-width: 400px; margin-top: 16px; font-family: "Space Grotesk", sans-serif; }
+.ollaya-package { display: flex; align-items: center; gap: 8px; padding: 9px 12px; border: 1px solid #d6dfeb; border-radius: 8px; background: #fff; color: #526580; box-shadow: 0 10px 22px rgba(53, 74, 108, .07); font-size: 9px; }
+.ollaya-package code { font-family: "JetBrains Mono", monospace; font-size: 8px; }
+.nuget-mark { padding: 2px 6px; border-radius: 4px; background: #2f6fb2; color: #fff; font-size: 8px; font-weight: 600; }
+.ollaya-code { padding: 12px 14px; border: 1px solid #d6dfeb; border-radius: 8px; background: #fff; box-shadow: 0 10px 22px rgba(53, 74, 108, .07); }
+.ollaya-code pre { margin: 0; color: #526580; font-family: "JetBrains Mono", monospace; font-size: 8.5px; line-height: 1.9; }
+.ollaya-code .syntax-muted { color: #7c5e9a; }
+.ollaya-code .syntax-type { color: #2f6b4f; }
+.ollaya-code .syntax-function { color: #3e739c; }
+.ollaya-code .syntax-string { color: #8a5a2b; }
+.ollaya-chips { display: flex; justify-content: center; flex-wrap: wrap; gap: 6px; }
+.ollaya-chips span { padding: 4px 9px; border: 1px solid #d6dfeb; border-radius: 20px; background: #fff; color: #526580; font-size: 8px; }
+
+.salmandan-art { background: radial-gradient(ellipse at 75% 80%, #dcebdc, transparent 72%), #edf3ec; }
+.salmandan-mockup { width: 84%; max-width: 470px; margin-top: 16px; overflow: hidden; border: 1px solid #d9e4d7; border-radius: 10px; background: #fff; color: #2e4234; box-shadow: 0 16px 28px rgba(47, 84, 58, .1); transform: rotate(-2deg); transition: transform .45s; }
+.production-card:hover .salmandan-mockup { transform: rotate(-1deg) translateY(-3px); }
+.salmandan-body { padding: 16px 18px; }
+.salmandan-hero { display: flex; align-items: center; gap: 9px; }
+.salmandan-logo { display: grid; place-items: center; width: 30px; height: 30px; flex: 0 0 auto; border-radius: 8px; background: #2f7d54; color: #fff; }
+.salmandan-logo .icon { width: 16px; height: 16px; }
+.salmandan-hero strong { display: block; font-size: 11px; font-weight: 700; line-height: 1.7; }
+.salmandan-hero small { display: block; margin-top: 1px; color: #5f7264; font-size: 7px; }
+.salmandan-actions { display: flex; flex-wrap: wrap; gap: 7px; margin: 13px 0; }
+.salmandan-btn { padding: 5px 10px; border: 1px solid #d7e3d5; border-radius: 6px; background: #f4f8f3; color: #4c6a53; font-size: 8px; }
+.salmandan-btn.primary { border-color: #2f7d54; background: #2f7d54; color: #fff; }
+.salmandan-cards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+.salmandan-cards span { padding: 7px 4px; border: 1px solid #dfe8dd; border-radius: 6px; background: #f4f8f3; color: #5c7261; font-size: 7.5px; text-align: center; }
+
+
 /* Contact */
 .contact-section { padding-bottom: 62px; }
 .contact-panel { position: relative; display: grid; grid-template-columns: 1.3fr .7fr; align-items: center; gap: 30px; overflow: hidden; padding: 51px 60px 54px; border: 1px solid #24503d; border-radius: 18px; background: #173e31; color: #f2f7f3; }
@@ -486,6 +532,16 @@ h2 { margin-bottom: 0; font-size: 36px; font-weight: 800; line-height: 1.65; let
   .toolbelt { flex-wrap: wrap; gap: 18px; }
   .toolbelt-label { flex-basis: 100%; }
   .project-art { height: 270px; }
+  .project-info { padding: 22px; }
+  .project-title-row h3 { font-size: 20px; }
+  .project-title-row h3[dir="ltr"] { font-size: 21px; }
+  .project-title-row h3 small { font-size: 10px; }
+  .project-info > p { min-height: 76px; font-size: 11.5px; }
+  .project-credit { font-size: 9px; }
+  .project-cta { font-size: 11px; }
+  .production-card .project-info { padding: 28px; }
+  .production-card .project-info > p { min-height: 0; font-size: 12px; }
+  .ollaya-code pre { font-size: 7.5px; }
   .meeting-mockup { width: 85%; }
   .meeting-body { padding-inline: 14px; }
   .bridge-scene { width: 88%; }
@@ -586,6 +642,21 @@ h2 { margin-bottom: 0; font-size: 36px; font-weight: 800; line-height: 1.65; let
   .project-title-row h3 small { font-size: 10px; }
   .project-info > p { min-height: 70px; font-size: 11px; }
   .project-credit { font-size: 8.5px; }
+  .projects-grid { grid-template-columns: 1fr; }
+  .project-art { height: 305px; }
+  .project-info { padding: 25px 28px; }
+  .project-title-row h3 { font-size: 25px; }
+  .project-title-row h3[dir="ltr"] { font-size: 27px; }
+  .project-title-row h3 small { font-size: 12px; }
+  .project-info > p { min-height: 0; font-size: 13px; }
+  .project-credit { font-size: 10px; }
+  .project-cta { font-size: 12px; }
+  .production-card { display: block; }
+  .production-card .project-art { height: 305px; min-height: 0; }
+  .production-card .project-info { padding: 25px 28px; }
+  .salmandan-mockup { width: 81%; max-width: 385px; }
+  .ollaya-scene { max-width: 385px; }
+  .ollaya-code pre { font-size: 8.5px; }
   .contact-panel { grid-template-columns: 1.5fr .5fr; padding: 38px; }
   .contact-copy h2 { font-size: 38px; }
   .contact-copy > p:not(.section-eyebrow) { font-size: 11px; }
@@ -765,6 +836,15 @@ h2 { margin-bottom: 0; font-size: 36px; font-weight: 800; line-height: 1.65; let
   .filter-button { gap: 6px; padding-inline: 8px; font-size: 10px; }
   .filter-button > span { padding-inline: 4px; font-size: 8px; }
   .project-art, .projects-grid.is-filtered .project-art { height: 265px; }
+  .project-status { top: 12px; right: 12px; padding: 4px 8px; font-size: 8px; }
+  .production-card .project-art { height: 265px; }
+  .salmandan-mockup { width: 87%; }
+  .salmandan-body { padding: 13px; }
+  .salmandan-hero strong { font-size: 10px; }
+  .salmandan-cards span { font-size: 7px; }
+  .ollaya-package { font-size: 8px; }
+  .ollaya-package code { font-size: 7px; }
+  .ollaya-code pre { font-size: 7.5px; }
   .art-label { top: 14px; left: 16px; font-size: 7px; }
   .concept-label { font-size: 7px; }
   .meeting-mockup { width: 87%; }
@@ -884,7 +964,10 @@ h2 { margin-bottom: 0; font-size: 36px; font-weight: 800; line-height: 1.65; let
   .toolbelt-items .icon { width: 11pt; height: 11pt; }
   .projects-grid, .projects-grid.is-filtered { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10pt; }
   .project-card, .projects-grid.is-filtered .project-card { display: block !important; border-radius: 7pt; break-inside: avoid; transform: none; }
-  .project-info, .projects-grid.is-filtered .project-info { padding: 11pt; }
+  .project-info, .projects-grid.is-filtered .project-info, .production-card .project-info { padding: 11pt; }
+  .production-card { display: block !important; }
+  .project-cta.is-disabled { color: var(--muted); }
+  .cta-domain { font-size: 6pt; }
   .project-category { font-size: 6.5pt; }
   .project-title-row { margin-block: 5pt; }
   .project-title-row h3, .project-title-row h3[dir="ltr"] { font-size: 13pt; }

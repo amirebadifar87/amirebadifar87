@@ -6,7 +6,7 @@
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#f7f9f8">
   <title>امیرمحمد عبادی‌فر | توسعه‌دهنده بک‌اند و برنامه‌نویس .NET</title>
-  <meta name="description" content="وب‌سایت شخصی و رزومه امیرمحمد عبادی‌فر، توسعه‌دهنده بک‌اند با تمرکز بر C#، ASP.NET Core و طراحی API. آشنایی با مهارت‌ها و پروژه‌های میت‌یاب و PromptBridge.">
+  <meta name="description" content="وب‌سایت شخصی و رزومه امیرمحمد عبادی‌فر، توسعه‌دهنده بک‌اند .NET؛ مهارت‌ها، میت‌یاب، PromptBridge، Ollaya.Client و پروژه‌های عملیاتی مانند سایت سالمندان مهریز.">
   <meta name="author" content="امیرمحمد عبادی‌فر">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://amirebadifar.ir/">
@@ -49,68 +49,144 @@
     })();
   </script>
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://amirebadifar.ir/#website",
-        "url": "https://amirebadifar.ir/",
-        "name": "وب‌سایت شخصی امیرمحمد عبادی‌فر",
-        "inLanguage": "fa-IR",
-        "publisher": { "@id": "https://amirebadifar.ir/#person" }
-      },
-      {
-        "@type": "ProfilePage",
-        "@id": "https://amirebadifar.ir/#profile",
-        "url": "https://amirebadifar.ir/",
-        "name": "امیرمحمد عبادی‌فر | توسعه‌دهنده بک‌اند و برنامه‌نویس .NET",
-        "description": "رزومه، مهارت‌ها و پروژه‌های امیرمحمد عبادی‌فر، توسعه‌دهنده بک‌اند در اکوسیستم دات‌نت.",
-        "isPartOf": { "@id": "https://amirebadifar.ir/#website" },
-        "mainEntity": { "@id": "https://amirebadifar.ir/#person" },
-        "inLanguage": "fa-IR",
-        "hasPart": [
-          { "@id": "https://meetyab.ir/#project" },
-          { "@id": "https://github.com/amirebadifar87/PromptBridge#project" }
-        ]
-      },
-      {
-        "@type": "Person",
-        "@id": "https://amirebadifar.ir/#person",
-        "name": "امیرمحمد عبادی‌فر",
-        "alternateName": ["AmirMohammad Ebadifar", "Amir Ebadifar"],
-        "url": "https://amirebadifar.ir/",
-        "jobTitle": "توسعه‌دهنده بک‌اند",
-        "description": "توسعه‌دهنده نرم‌افزار با تمرکز بر ساخت وب‌اپلیکیشن و API در اکوسیستم .NET و نوشتن کد تمیز، قابل‌نگهداری و مقیاس‌پذیر.",
-        "sameAs": ["https://github.com/amirebadifar87"],
-        "knowsAbout": [
-          "C#", ".NET", "ASP.NET Core", "Blazor", "EF Core", "FluentValidation", "Back-end development", "API development",
-          "SQL Server", "PostgreSQL", "Redis", "MongoDB", "Elasticsearch", "MeiliSearch",
-          "HTML5", "CSS3", "JavaScript", "Bootstrap",
-          "ML.NET", "Semantic Kernel", "Python", "FastAPI", "Flask", "Docker", "Git", "GitHub"
-        ]
-      },
-      {
-        "@type": "CreativeWork",
-        "@id": "https://meetyab.ir/#project",
-        "name": "میت‌یاب",
-        "alternateName": "Meetyab",
-        "url": "https://meetyab.ir",
-        "description": "پلتفرم زمان‌بندی زنده برای کمک به تیم‌ها در پیدا کردن بهترین زمان جلسه؛ توسعه مشترک با علیرضا حائری.",
-        "creator": { "@id": "https://amirebadifar.ir/#person" },
-        "contributor": { "@type": "Person", "name": "علیرضا حائری", "alternateName": "Alireza Haeri", "url": "https://github.com/alireza-haeri/" }
-      },
-      {
-        "@type": "SoftwareApplication",
-        "@id": "https://github.com/amirebadifar87/PromptBridge#project",
-        "name": "PromptBridge",
-        "url": "https://github.com/amirebadifar87/PromptBridge",
-        "applicationCategory": "DeveloperApplication",
-        "description": "ابزار دسکتاپ محلی برای اتصال کدبیس به دستیارهای گفت‌وگوی هوش مصنوعی، بدون نیاز به کلید API.",
-        "creator": { "@id": "https://amirebadifar.ir/#person" }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://amirebadifar.ir/#website",
+      "url": "https://amirebadifar.ir/",
+      "name": "وب‌سایت شخصی امیرمحمد عبادی‌فر",
+      "inLanguage": "fa-IR",
+      "publisher": {
+        "@id": "https://amirebadifar.ir/#person"
       }
-    ]
-  }
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://amirebadifar.ir/#profile",
+      "url": "https://amirebadifar.ir/",
+      "name": "امیرمحمد عبادی‌فر | توسعه‌دهنده بک‌اند و برنامه‌نویس .NET",
+      "description": "رزومه، مهارت‌ها و پروژه‌های امیرمحمد عبادی‌فر، توسعه‌دهنده بک‌اند در اکوسیستم دات‌نت.",
+      "isPartOf": {
+        "@id": "https://amirebadifar.ir/#website"
+      },
+      "mainEntity": {
+        "@id": "https://amirebadifar.ir/#person"
+      },
+      "inLanguage": "fa-IR",
+      "hasPart": [
+        {
+          "@id": "https://meetyab.ir/#project"
+        },
+        {
+          "@id": "https://github.com/amirebadifar87/PromptBridge#project"
+        },
+        {
+          "@id": "https://github.com/amirebadifar87/Ollaya.Client#project"
+        },
+        {
+          "@id": "https://salmandan-mehriz.com/#project"
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://amirebadifar.ir/#person",
+      "name": "امیرمحمد عبادی‌فر",
+      "alternateName": [
+        "AmirMohammad Ebadifar",
+        "Amir Ebadifar"
+      ],
+      "url": "https://amirebadifar.ir/",
+      "jobTitle": "توسعه‌دهنده بک‌اند",
+      "description": "توسعه‌دهنده نرم‌افزار با تمرکز بر ساخت وب‌اپلیکیشن و API در اکوسیستم .NET و نوشتن کد تمیز، قابل‌نگهداری و مقیاس‌پذیر.",
+      "sameAs": [
+        "https://github.com/amirebadifar87"
+      ],
+      "knowsAbout": [
+        "C#",
+        ".NET",
+        "ASP.NET Core",
+        "Blazor",
+        "EF Core",
+        "FluentValidation",
+        "Back-end development",
+        "API development",
+        "SQL Server",
+        "PostgreSQL",
+        "Redis",
+        "MongoDB",
+        "Elasticsearch",
+        "MeiliSearch",
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Bootstrap",
+        "ML.NET",
+        "Semantic Kernel",
+        "Python",
+        "FastAPI",
+        "Flask",
+        "Docker",
+        "Git",
+        "GitHub"
+      ]
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://meetyab.ir/#project",
+      "name": "میت‌یاب",
+      "alternateName": "Meetyab",
+      "url": "https://meetyab.ir",
+      "description": "پلتفرم زمان‌بندی زنده برای کمک به تیم‌ها در پیدا کردن بهترین زمان جلسه؛ توسعه مشترک با علیرضا حائری. این پروژه در حال حاضر در دسترس نیست.",
+      "creator": {
+        "@id": "https://amirebadifar.ir/#person"
+      },
+      "contributor": {
+        "@type": "Person",
+        "name": "علیرضا حائری",
+        "alternateName": "Alireza Haeri",
+        "url": "https://github.com/alireza-haeri/"
+      },
+      "creativeWorkStatus": "Currently unavailable"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://github.com/amirebadifar87/PromptBridge#project",
+      "name": "PromptBridge",
+      "url": "https://github.com/amirebadifar87/PromptBridge",
+      "applicationCategory": "DeveloperApplication",
+      "description": "ابزار دسکتاپ محلی برای اتصال کدبیس به دستیارهای گفت‌وگوی هوش مصنوعی، بدون نیاز به کلید API.",
+      "creator": {
+        "@id": "https://amirebadifar.ir/#person"
+      }
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "@id": "https://github.com/amirebadifar87/Ollaya.Client#project",
+      "name": "Ollaya.Client",
+      "url": "https://github.com/amirebadifar87/Ollaya.Client",
+      "codeRepository": "https://github.com/amirebadifar87/Ollaya.Client",
+      "programmingLanguage": "C#",
+      "description": "کلاینت دات‌نت برای Ollaya؛ سرویس تصمیم‌گیری محلی هوش مصنوعی با سؤال‌های ساخت‌یافته، پاسخ‌های نوع‌دار و API ناهمگام.",
+      "creator": {
+        "@id": "https://amirebadifar.ir/#person"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://salmandan-mehriz.com/#project",
+      "name": "وب‌سایت آسایشگاه خیریه سالمندان مهریز",
+      "url": "https://salmandan-mehriz.com/",
+      "description": "وب‌سایت رسمی و فعال آسایشگاه خیریه سالمندان مهریز؛ معرفی مرکز، اخبار و مقالات، پذیرش سالمندان، کمک مالی، همکاری داوطلبانه و اهدای اقلام.",
+      "creator": {
+        "@id": "https://amirebadifar.ir/#person"
+      },
+      "creativeWorkStatus": "Active production website"
+    }
+  ]
+}
   </script>
   <script src="assets/main.js" defer></script>
 </head>
@@ -129,6 +205,7 @@
     <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
     <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-14-2 18"/></symbol>
     <symbol id="i-terminal" viewBox="0 0 24 24"><path d="m4 6 6 6-6 6m9 0h7"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
     <symbol id="i-box" viewBox="0 0 24 24"><path d="M21 8 12 3 3 8v8l9 5 9-5V8Z"/><path d="M3 8l9 5 9-5M12 13v8"/></symbol>
     <symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
     <symbol id="i-layout" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 9v12"/></symbol>
@@ -152,6 +229,7 @@
         <a href="#about">درباره من</a>
         <a href="#skills">تخصص‌ها</a>
         <a href="#projects">پروژه‌ها</a>
+        <a href="#production">پروژه‌های فعال</a>
         <a href="#contact">ارتباط با من</a>
         <a class="nav-github" href="https://github.com/amirebadifar87" target="_blank" rel="noopener noreferrer">گیت‌هاب <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-left"/></svg><span class="sr-only">؛ پروفایل امیرمحمد عبادی‌فر، در زبانه جدید</span></a>
       </nav>
@@ -291,18 +369,19 @@
     <section class="section projects-section" id="projects" aria-labelledby="projects-heading">
       <div class="container">
         <div class="section-heading" data-reveal><div><p class="section-eyebrow"><span></span> نمونه‌کارها <bdi>/ 03</bdi></p><h2 id="projects-heading">از فکر، تا محصول<span class="accent-period">.</span></h2></div><p>مسئله‌های متفاوت، یک رویکرد مشترک: <br> ساختن چیزی که به کار بیاید.</p></div>
-        <div class="project-toolbar" data-reveal><div class="project-filters" role="group" aria-label="فیلتر پروژه‌ها"><button type="button" class="filter-button is-active" data-filter="all" aria-pressed="true">همه پروژه‌ها <span>۰۲</span></button><button type="button" class="filter-button" data-filter="web" aria-pressed="false">وب و همکاری</button><button type="button" class="filter-button" data-filter="tool" aria-pressed="false">ابزار توسعه</button></div><p class="project-count" id="project-count" role="status" aria-live="polite" aria-atomic="true">۲ پروژه معرفی‌شده</p></div>
+        <div class="project-toolbar" data-reveal><div class="project-filters" role="group" aria-label="فیلتر پروژه‌ها"><button type="button" class="filter-button is-active" data-filter="all" aria-pressed="true">همه پروژه‌ها <span>۰۳</span></button><button type="button" class="filter-button" data-filter="web" aria-pressed="false">وب و همکاری</button><button type="button" class="filter-button" data-filter="tool" aria-pressed="false">ابزار توسعه</button></div><p class="project-count" id="project-count" role="status" aria-live="polite" aria-atomic="true">۳ پروژه معرفی‌شده</p></div>
         <div class="projects-grid" id="projects-grid">
           <article class="project-card" data-category="web" data-reveal>
             <div class="project-art meetyab-art" role="img" aria-label="طرح مفهومی میت‌یاب: تقویم هماهنگی جلسه و انتخاب زمان مشترک">
               <span class="art-label" dir="ltr">01 / WEB PLATFORM</span>
+              <span class="project-status is-offline">فعلاً در دسترس نیست</span>
               <div class="meeting-mockup" aria-hidden="true">
                 <div class="mockup-browser" dir="ltr"><span><i></i><i></i><i></i></span><span><svg class="icon"><use href="#i-globe"/></svg> meetyab.ir</span><span>↗</span></div>
                 <div class="meeting-body"><div class="meeting-title"><span class="meet-logo"><svg class="icon"><use href="#i-link"/></svg></span><div><strong>یک زمان خوب، برای همه.</strong><small>هماهنگی جلسه، بدون رفت‌وبرگشت</small></div></div><div class="calendar-month"><strong>هفته‌ای که پیش روست</strong><span>زمان مشترک را پیدا کنید</span></div><div class="calendar-days"><span>شنبه<small>۱۲</small></span><span>یک‌شنبه<small>۱۳</small></span><span>دوشنبه<small>۱۴</small></span><span class="selected-day">سه‌شنبه<small>۱۵<svg class="icon"><use href="#i-check"/></svg></small></span><span>چهارشنبه<small>۱۶</small></span><span>پنج‌شنبه<small>۱۷</small></span><span>جمعه<small>۱۸</small></span></div><div class="meeting-footer"><span class="time-slot"><span></span>۱۰:۰۰ — ۱:۰۰</span><span class="meeting-avatars"><i>ا</i><i>ع</i><i>م</i></span></div></div>
               </div>
               <span class="concept-label">تصویر مفهومی</span>
             </div>
-            <div class="project-info"><div class="project-category"><span class="category-dot"></span> وب‌اپلیکیشن <span class="category-separator">/</span> پروژه تیمی</div><div class="project-title-row"><h3>میت‌یاب <small lang="en" dir="ltr">Meetyab</small></h3><a class="project-link-icon" href="https://meetyab.ir" target="_blank" rel="noopener noreferrer" aria-label="مشاهده وب‌سایت میت‌یاب؛ در زبانه جدید"><svg class="icon" aria-hidden="true"><use href="#i-arrow-up-left"/></svg></a></div><p>پلتفرمی برای زمان‌بندی زنده جلسات؛ تا تیم‌ها راحت‌تر بهترین زمان مشترک را برای جلسه پیدا کنند.</p><div class="project-credit"><svg class="icon" aria-hidden="true"><use href="#i-branch"/></svg><span>توسعه مشترک با <a href="https://github.com/alireza-haeri/" target="_blank" rel="noopener noreferrer">علیرضا حائری<span class="sr-only">؛ در زبانه جدید</span></a></span></div><a class="project-cta" href="https://meetyab.ir" target="_blank" rel="noopener noreferrer">مشاهده وب‌سایت<svg class="icon" aria-hidden="true"><use href="#i-arrow-up-left"/></svg><span class="sr-only">میت‌یاب؛ در زبانه جدید</span></a></div>
+            <div class="project-info"><div class="project-category"><span class="category-dot"></span> وب‌اپلیکیشن <span class="category-separator">/</span> پروژه تیمی</div><div class="project-title-row"><h3>میت‌یاب <small lang="en" dir="ltr">Meetyab</small></h3></div><p>پلتفرمی برای زمان‌بندی زنده جلسات؛ تا تیم‌ها راحت‌تر بهترین زمان مشترک را برای جلسه پیدا کنند.</p><div class="project-credit"><svg class="icon" aria-hidden="true"><use href="#i-branch"/></svg><span>توسعه مشترک با <a href="https://github.com/alireza-haeri/" target="_blank" rel="noopener noreferrer">علیرضا حائری<span class="sr-only">؛ در زبانه جدید</span></a></span></div><span class="project-cta is-disabled" aria-disabled="true"><span>فعلاً در دسترس نیست</span><span class="cta-domain" dir="ltr">meetyab.ir</span></span></div>
           </article>
           <article class="project-card" data-category="tool" data-reveal>
             <div class="project-art promptbridge-art" role="img" aria-label="طرح مفهومی PromptBridge: اتصال کدبیس به دستیار هوش مصنوعی در یک ابزار محلی">
@@ -316,8 +395,47 @@
             </div>
             <div class="project-info"><div class="project-category"><span class="category-dot purple-dot"></span> ابزار دسکتاپ <span class="category-separator">/</span> توسعه‌دهنده‌ها</div><div class="project-title-row"><h3 lang="en" dir="ltr">PromptBridge</h3><a class="project-link-icon" href="https://github.com/amirebadifar87/PromptBridge" target="_blank" rel="noopener noreferrer" aria-label="مشاهده مخزن PromptBridge در گیت‌هاب؛ در زبانه جدید"><svg class="icon" aria-hidden="true"><use href="#i-arrow-up-left"/></svg></a></div><p>کدبیس خود را به دستیار گفت‌وگوی هوش مصنوعی متصل کنید؛ یک ابزار دسکتاپ محلی، بدون نیاز به کلید <bdi>API</bdi>.</p><div class="project-credit"><svg class="icon" aria-hidden="true"><use href="#i-terminal"/></svg><span>اجرای محلی <span class="credit-dot">·</span> همراه دستیارهای گفت‌وگوی <bdi>AI</bdi></span></div><a class="project-cta" href="https://github.com/amirebadifar87/PromptBridge" target="_blank" rel="noopener noreferrer">بررسی کد در گیت‌هاب<svg class="icon" aria-hidden="true"><use href="#i-arrow-up-left"/></svg><span class="sr-only">PromptBridge؛ در زبانه جدید</span></a></div>
           </article>
+          <article class="project-card" data-category="tool" data-reveal>
+            <div class="project-art ollaya-art" role="img" aria-label="طرح مفهومی Ollaya.Client: بسته دات‌نت برای تصمیم‌گیری محلی هوش مصنوعی با پاسخ‌های نوع‌دار">
+              <span class="art-label" dir="ltr">03 / .NET LIBRARY</span>
+              <div class="ollaya-scene" dir="ltr" aria-hidden="true">
+                <div class="ollaya-package"><span class="nuget-mark">NuGet</span><code>dotnet add package Ollaya.Client</code></div>
+                <div class="ollaya-code"><pre><span class="syntax-muted">var</span> client = <span class="syntax-muted">new</span> <span class="syntax-type">OllayaClient</span>();
+<span class="syntax-muted">var</span> answer = <span class="syntax-muted">await</span> client.<span class="syntax-function">DecideAsync</span>(
+    model: <span class="syntax-string">"laya:en"</span>,
+    questions: QuestionBuilders.<span class="syntax-function">Questions</span>(
+        (<span class="syntax-string">"refund"</span>, QuestionBuilders.<span class="syntax-function">Noul</span>(...))
+    ));</pre></div>
+                <div class="ollaya-chips"><span>Choice</span><span>Score</span><span>Noul</span><span>DI-ready</span></div>
+              </div>
+              <span class="concept-label">تصویر مفهومی</span>
+            </div>
+            <div class="project-info"><div class="project-category"><span class="category-dot blue-dot"></span> کتابخانه دات‌نت <span class="category-separator">/</span> NuGet</div><div class="project-title-row"><h3 lang="en" dir="ltr">Ollaya.Client</h3><a class="project-link-icon" href="https://github.com/amirebadifar87/Ollaya.Client" target="_blank" rel="noopener noreferrer" aria-label="مشاهده مخزن Ollaya.Client در گیت‌هاب؛ در زبانه جدید"><svg class="icon" aria-hidden="true"><use href="#i-arrow-up-left"/></svg></a></div><p>کلاینت دات‌نت برای <bdi>Ollaya</bdi>؛ سرویس تصمیم‌گیری محلی هوش مصنوعی با سؤال‌های ساخت‌یافته، پاسخ‌های نوع‌دار و <bdi>API</bdi> ناهمگام.</p><div class="project-credit"><svg class="icon" aria-hidden="true"><use href="#i-box"/></svg><span><bdi>C#</bdi> <span class="credit-dot">·</span> <bdi>NuGet</bdi> <span class="credit-dot">·</span> <bdi>Dependency Injection</bdi></span></div><a class="project-cta" href="https://github.com/amirebadifar87/Ollaya.Client" target="_blank" rel="noopener noreferrer">بررسی کد در گیت‌هاب<svg class="icon" aria-hidden="true"><use href="#i-arrow-up-left"/></svg><span class="sr-only">Ollaya.Client؛ در زبانه جدید</span></a></div>
+          </article>
         </div>
         <p class="projects-footnote"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>کدها و پروژه‌های بیشتر را می‌توانید در <a href="https://github.com/amirebadifar87?tab=repositories" target="_blank" rel="noopener noreferrer">گیت‌هاب من<span class="sr-only">؛ در زبانه جدید</span></a> ببینید.</p>
+      </div>
+    </section>
+
+    <section class="section production-section" id="production" aria-labelledby="production-heading">
+      <div class="container">
+        <div class="section-heading" data-reveal><div><p class="section-eyebrow"><span></span> پروژه‌های پروداکشن <bdi>/ 04</bdi></p><h2 id="production-heading">روی سرور، در حال استفاده<span class="accent-period">.</span></h2></div><p>پروژه‌هایی که از مرحله توسعه گذشته‌اند و کاربران واقعی از آن‌ها استفاده می‌کنند.</p></div>
+        <article class="project-card production-card" data-reveal>
+          <div class="project-art salmandan-art" role="img" aria-label="طرح مفهومی وب‌سایت آسایشگاه سالمندان مهریز: صفحه اصلی با کمک مالی و همکاری داوطلبانه">
+            <span class="art-label" dir="ltr">PRODUCTION / LIVE WEBSITE</span>
+            <span class="project-status is-online">فعال و در دسترس</span>
+            <div class="salmandan-mockup" aria-hidden="true">
+              <div class="mockup-browser" dir="ltr"><span><i></i><i></i><i></i></span><span><svg class="icon"><use href="#i-globe"/></svg> salmandan-mehriz.com</span><span>↗</span></div>
+              <div class="salmandan-body">
+                <div class="salmandan-hero"><span class="salmandan-logo"><svg class="icon"><use href="#i-heart"/></svg></span><div><strong>جایی که مهربانی و تخصص کنار هم می‌نشیند</strong><small>آسایشگاه خیریه سالمندان مهریز</small></div></div>
+                <div class="salmandan-actions"><span class="salmandan-btn primary">کمک مالی</span><span class="salmandan-btn">داوطلب همکاری</span></div>
+                <div class="salmandan-cards"><span>اخبار</span><span>مقالات</span><span>پذیرش</span><span>اهدای اقلام</span></div>
+              </div>
+            </div>
+            <span class="concept-label">تصویر مفهومی</span>
+          </div>
+          <div class="project-info"><div class="project-category"><span class="category-dot online-dot"></span> پروژه عملیاتی <span class="category-separator">/</span> وب‌سایت رسمی</div><div class="project-title-row"><h3>آسایشگاه سالمندان مهریز</h3><a class="project-link-icon" href="https://salmandan-mehriz.com/" target="_blank" rel="noopener noreferrer" aria-label="مشاهده وب‌سایت آسایشگاه سالمندان مهریز؛ در زبانه جدید"><svg class="icon" aria-hidden="true"><use href="#i-arrow-up-left"/></svg></a></div><p>وب‌سایت رسمی و فعال آسایشگاه خیریه سالمندان مهریز؛ معرفی مرکز، اخبار و مقالات، پذیرش سالمندان، کمک مالی، همکاری داوطلبانه و اهدای اقلام.</p><div class="project-credit"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg><span>مرکز خیریه از سال ۱۳۷۲، زیر نظر بهزیستی؛ حدود ۱۰۰ سالمند تحت مراقبت</span></div><a class="project-cta" href="https://salmandan-mehriz.com/" target="_blank" rel="noopener noreferrer">مشاهده وب‌سایت فعال<svg class="icon" aria-hidden="true"><use href="#i-arrow-up-left"/></svg><span class="sr-only">آسایشگاه سالمندان مهریز؛ در زبانه جدید</span></a></div>
+        </article>
       </div>
     </section>
 
@@ -325,7 +443,7 @@
       <div class="container">
         <div class="contact-panel" data-reveal>
           <div class="contact-pattern" aria-hidden="true"></div>
-          <div class="contact-copy"><p class="section-eyebrow"><span></span> ارتباط با من <bdi>/ 04</bdi></p><h2 id="contact-heading">ایده بعدی را <br> با هم <span>بسازیم.</span></h2><p>به ساختن، حل مسئله و همکاری روی ایده‌های کاربردی علاقه‌مندم. <br class="desktop-break"> برای آشنایی با کدها و دنبال‌کردن پروژه‌هایم، به گیت‌هاب سر بزنید.</p><div class="contact-actions"><a class="button button-mint" href="https://github.com/amirebadifar87" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>پروفایل گیت‌هاب من<svg class="icon" aria-hidden="true"><use href="#i-arrow-up-left"/></svg><span class="sr-only">؛ در زبانه جدید</span></a><button class="button button-dark-outline copy-trigger" type="button"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>کپی پیوند سایت</span></button></div></div>
+          <div class="contact-copy"><p class="section-eyebrow"><span></span> ارتباط با من <bdi>/ 05</bdi></p><h2 id="contact-heading">ایده بعدی را <br> با هم <span>بسازیم.</span></h2><p>به ساختن، حل مسئله و همکاری روی ایده‌های کاربردی علاقه‌مندم. <br class="desktop-break"> برای آشنایی با کدها و دنبال‌کردن پروژه‌هایم، به گیت‌هاب سر بزنید.</p><div class="contact-actions"><a class="button button-mint" href="https://github.com/amirebadifar87" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>پروفایل گیت‌هاب من<svg class="icon" aria-hidden="true"><use href="#i-arrow-up-left"/></svg><span class="sr-only">؛ در زبانه جدید</span></a><button class="button button-dark-outline copy-trigger" type="button"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>کپی پیوند سایت</span></button></div></div>
           <div class="contact-art" aria-hidden="true"><div class="contact-ring ring-one"></div><div class="contact-ring ring-two"></div><div class="contact-ring ring-three"></div><span class="contact-code">&lt;/&gt;</span><span class="contact-node node-one"><svg class="icon"><use href="#i-code"/></svg></span><span class="contact-node node-two"><svg class="icon"><use href="#i-spark"/></svg></span><span class="contact-node node-three"><svg class="icon"><use href="#i-branch"/></svg></span><span class="contact-art-caption" dir="ltr">ALWAYS BUILDING.<br>ALWAYS LEARNING.</span></div>
         </div>
       </div>
