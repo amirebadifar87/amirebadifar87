@@ -904,6 +904,80 @@ h2 { margin-bottom: 0; font-size: 36px; font-weight: 800; line-height: 1.65; let
   .code-window, .floating-stack, .meeting-mockup, .bridge-source, .bridge-chat { transform: none; }
 }
 
+/* Added content sections — same visual language as the original design. */
+.services-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.service-card { grid-column: span 1; display: flex; flex-direction: column; }
+.service-card:first-child, .service-card:last-child { grid-column: span 2; }
+.service-deliverable { display: flex; align-items: center; gap: 8px; margin-top: 16px !important; padding-top: 13px; border-top: 1px solid var(--line); color: var(--accent) !important; font-size: 11.5px !important; font-weight: 600; }
+.service-deliverable .icon { width: 15px; height: 15px; }
+.learning-note { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin: 18px 0 0; color: var(--muted); font-size: 12px; }
+.learning-note > span { padding: 3px 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--accent); font-weight: 650; }
+.experience-card { max-width: 900px; }
+.experience-kind { margin-bottom: 4px; color: var(--accent); font-size: 10.5px; font-weight: 700; }
+.experience-list h3 { margin-bottom: 5px; }
+.process-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+.process-card { grid-column: span 1; }
+.process-number { display: block; margin-bottom: 14px; font-family: "Space Grotesk", sans-serif; font-size: 26px; font-weight: 600; color: var(--accent); }
+.project-detail-link { display: inline-flex; align-items: center; gap: 7px; margin-top: 12px; color: var(--accent); font-size: 11.5px; font-weight: 650; }
+.project-detail-link:hover { text-decoration: underline; text-underline-offset: 4px; }
+.project-detail-link .icon { width: 15px; height: 15px; }
+.contact-form-card { margin-top: 22px; padding: 30px 34px; border: 1px solid var(--line); border-radius: 15px; background: var(--surface); box-shadow: var(--shadow); }
+.contact-form-card h3 { margin-bottom: 8px; font-size: 20px; }
+.form-note { margin-bottom: 20px; color: var(--muted); font-size: 12px; line-height: 2; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.field { display: grid; gap: 6px; margin-bottom: 14px; }
+.field label { font-size: 12px; font-weight: 650; }
+.field label span { color: var(--accent); }
+.field input, .field select, .field textarea { width: 100%; padding: 11px 14px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--ink); font-size: 13px; line-height: 1.8; }
+.field textarea { resize: vertical; min-height: 120px; }
+.field input:focus, .field select:focus, .field textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: var(--accent); }
+.field [aria-invalid="true"] { border-color: #b4453d; }
+.field-error { color: #b4453d; font-size: 11px; }
+.field-error:empty { display: none; }
+.form-actions { display: flex; flex-wrap: wrap; gap: 11px; margin-top: 4px; }
+.form-status { margin: 14px 0 0; color: var(--accent); font-size: 12px; }
+.form-status:empty { display: none; }
+[data-theme="dark"] .field-error { color: #f2b8b5; }
+
+/* Project case-study pages */
+.breadcrumb { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; margin-bottom: 26px; color: var(--muted); font-size: 12px; }
+.breadcrumb a:hover { color: var(--accent); }
+.breadcrumb [aria-current] { color: var(--ink); font-weight: 650; }
+.detail-hero { max-width: 850px; margin-bottom: 30px; }
+.detail-hero .project-status { position: static; display: inline-flex; margin-bottom: 10px; }
+.detail-art { margin-bottom: 30px; border: 1px solid var(--line); border-radius: 15px; overflow: hidden; }
+.detail-art .project-art { height: 380px; border-radius: 0; }
+.detail-hero h1 { margin: 12px 0; font-size: clamp(32px, 4vw, 48px); font-weight: 850; line-height: 1.5; letter-spacing: -1px; }
+.detail-summary { color: var(--muted); font-size: 15px; line-height: 2.1; }
+.detail-layout { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 34px; align-items: start; }
+.detail-content .skill-card { grid-column: auto; margin-bottom: 18px; }
+.detail-content h2 { margin-bottom: 10px; font-size: 19px; }
+.detail-content p { margin-bottom: 0; color: var(--muted); font-size: 13px; line-height: 2.1; }
+.detail-aside { position: sticky; top: calc(var(--header-height) + 24px); padding: 25px 26px; border: 1px solid var(--line); border-radius: 13px; background: var(--surface); }
+.detail-aside h2 { margin-bottom: 16px; font-size: 15px; }
+.detail-aside dl { display: grid; gap: 15px; margin: 0 0 18px; }
+.detail-aside dt { margin-bottom: 3px; color: var(--muted); font-size: 11px; }
+.detail-aside dd { margin: 0; color: var(--accent); font-size: 16px; font-weight: 750; }
+.detail-aside .button { width: 100%; }
+.detail-nav { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 18px; margin-top: 30px; padding-top: 24px; border-top: 1px solid var(--line); }
+.feature-list { display: grid; gap: 9px; margin: 0; padding: 0; list-style: none; }
+.feature-list li { display: flex; align-items: flex-start; gap: 9px; color: var(--muted); font-size: 13px; }
+.feature-list .icon { width: 16px; height: 16px; margin-top: 5px; color: var(--accent); }
+
+@media (max-width: 1100px) {
+  .services-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .service-card:first-child, .service-card:last-child { grid-column: span 1; }
+  .process-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .detail-layout { grid-template-columns: 1fr; }
+  .detail-aside { position: static; }
+}
+@media (max-width: 700px) {
+  .services-grid, .process-grid { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; gap: 0; }
+  .contact-form-card { padding: 24px 22px; }
+  .contact-actions .button { width: 100%; }
+}
+
 /* A real, selectable-text resume via browser Print / Save as PDF. */
 @page { size: A4; margin: 13mm; }
 @media print {
@@ -914,6 +988,13 @@ h2 { margin-bottom: 0; font-size: 36px; font-weight: 800; line-height: 1.65; let
   .container { width: 100%; max-width: none; }
   .site-header, .skip-link, .hero-grid-pattern, .hero-visual, .hero-bottom, .hero-actions, .hero-links, .tech-strip, .section-heading > p, .project-toolbar, .project-art, .projects-footnote, .contact-pattern, .contact-art, .contact-actions, .footer-brand, .back-top, .toast, .noscript-note, .principles-footer, .principles-list li > .icon, .about-signoff > .icon, .backend-flow, .card-index, .focus-label, .highlight-word svg { display: none !important; }
   .will-reveal { opacity: 1 !important; transform: none !important; }
+  .contact-form-card, .project-detail-link, .learning-note, .process-section, .detail-art, .detail-nav, .breadcrumb { display: none !important; }
+  .services-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6pt; }
+  .service-card, .service-card:first-child, .service-card:last-child { grid-column: span 1; padding: 7pt; break-inside: avoid; }
+  .service-card > p, .service-deliverable, .service-card .skill-card-top { display: none !important; }
+  .service-card h3 { margin-bottom: 0; font-size: 8pt; line-height: 1.7; }
+  .experience-section { display: none !important; }
+  .section { padding: 9pt 0; }
   .hero { padding: 0 0 8pt; background: none; overflow: visible; }
   .hero-layout { display: block; }
   .hero-eyebrow { padding: 0; border: 0; font-size: 9pt; }

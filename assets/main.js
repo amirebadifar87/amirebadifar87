@@ -248,5 +248,63 @@
     });
   });
 
+  const contactDataEl = document.getElementById('contact-data');
+  const form = document.getElementById('project-form');
+  if (contactDataEl && form) {
+    const contactData = JSON.parse(contactDataEl.textContent);
+    const messages = contactData.messages;
+    form.noValidate = true;
+    const name = form.elements.namedItem('name');
+    const email = form.elements.namedItem('email');
+    const type = form.elements.namedItem('type');
+    const message = form.elements.namedItem('message');
+    const status = document.getElementById('form-status');
+
+    function setError(field, text) {
+      const error = document.getElementById(field.getAttribute('aria-describedby'));
+      field.setAttribute('aria-invalid', text ? 'true' : 'false');
+      error.textContent = text;
+    }
+
+    function validate() {
+      let firstInvalid = null;
+      const checks = [
+        [name, name.value.trim() ? '' : messages.required],
+        [email, !email.value.trim() ? messages.required : (email.validity.typeMismatch || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim()) ? messages.invalidEmail : '')],
+        [message, !message.value.trim() ? messages.required : (message.value.trim().length < 20 ? messages.shortMessage : '')]
+      ];
+      checks.forEach(([field, error]) => { setError(field, error); if (error && !firstInvalid) firstInvalid = field; });
+      if (firstInvalid) { firstInvalid.focus(); status.textContent = ''; return false; }
+      return true;
+    }
+
+    function requestText() {
+      return `${messages.mailName}: ${name.value.trim()}\n${messages.mailEmail}: ${email.value.trim()}\n${messages.mailType}: ${type.value}\n\n${messages.mailMessage}:\n${message.value.trim()}`;
+    }
+
+    [name, email, message].forEach(field => field.addEventListener('input', () => { setError(field, ''); status.textContent = ''; }));
+
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      if (!validate()) return;
+      const subject = encodeURIComponent(`${messages.mailSubject} — ${name.value.trim()}`);
+      const body = encodeURIComponent(requestText());
+      status.textContent = messages.prepared;
+      window.location.href = `mailto:${contactData.email}?subject=${subject}&body=${body}`;
+    });
+
+    form.querySelector('.copy-request').addEventListener('click', async () => {
+      if (!validate()) return;
+      const text = `${messages.mailSubject}\n\n${requestText()}`;
+      let copied = false;
+      try {
+        if (navigator.clipboard && window.isSecureContext) { await navigator.clipboard.writeText(text); copied = true; }
+      } catch (_) {}
+      if (!copied) copied = legacyCopy(text);
+      showToast(copied ? messages.copied : messages.copyFailed);
+      if (copied) status.textContent = messages.copied;
+    });
+  }
+
   document.getElementById('copyright-year').textContent = persianNumber.format(new Date().getFullYear());
 })();
